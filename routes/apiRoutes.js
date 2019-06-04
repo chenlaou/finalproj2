@@ -7,7 +7,7 @@ var passport = require("passport");
 module.exports = function(app) {
   // Get all users
 
-  app.post("/api/login", passport.authenticate("basic"), function(req, res) {
+  app.post("/api/login", /* passport.authenticate("basic"), */ function(req, res) {
     console.log("login");
     // Since we're doing a POST with javascript, we can't actually redirect that post into a GET request
     // So we're sending the user back the route to the members page because the redirect will happen on the front end
