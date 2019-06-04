@@ -37,15 +37,6 @@
 
           <a href="" class="brand-logo right"><img src="https://i.ibb.co/CBrD1cG/newsify.png" style="height:80px; alt="
               newsify"></a>
-
-
-        </ul>
-
-        {{!-- <li><a href="#logoff" class="waves-effect waves-light btn">LOG OFF</a></li> --}}
-        {{!-- <li>
-          <img class="logo" id="logo"> <a href="/index"><img src="https://i.ibb.co/CBrD1cG/newsify.png"  style="height:80px;" alt="newsify"></a></img>
-        </li> --}}
-      </ul>
     </div>
   </nav>
 </div>
@@ -88,92 +79,6 @@
     </div>
     {{/each}}
   </div>
-</div>
-
-
-{{!-- SPORTS CARDS --}}
-<div id="sports" class="col s12"> <a href="/category/sports">Sports</a>
-  <div class="row">
-    {{#each newsArticles}}
-    <div class="col s12 m4">
-      <div class="main">
-        <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="{{urlToImage}}">
-          </div>
-          <div class="card-content">
-            <i class=" close material-icons right white-text">close</i>
-            <span class="card-title activator grey-text text-darken-4">{{title}}<i class="far fa-heart"></i></span>
-            <p><a target="blank" href="#demo-modal-fixed-footer">Read Article</a></p>
-
-          </div>
-          {{!-- Here is some more information about this product that is only revealed once clicked on. --}}
-          <div class=" card-reveal">
-            <span class="card-title grey-text text-darken-4">{{title}}<i class="material-icons right">close</i></span>
-            <p>{{description}}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    {{/each}}
-  </div>
-</div>
-
-{{!-- Entertainment Cards --}}
-<div id="entertainment" class="col s12">
-  <div class="row">
-    {{#each newsArticles}}
-    <div class="col s12 m4">
-      <div class="main">
-        <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="{{urlToImage}}">
-          </div>
-          <div class="card-content">
-            <i class=" close material-icons right white-text">close</i>
-            <span class="card-title activator grey-text text-darken-4">{{title}}<i class="far fa-heart"></i></span>
-            <p><a target="blank" href="#demo-modal-fixed-footer">Read Article</a></p>
-
-          </div>
-          {{!-- Here is some more information about this product that is only revealed once clicked on. --}}
-          <div class=" card-reveal">
-            <span class="card-title grey-text text-darken-4">{{title}}<i class="material-icons right">close</i></span>
-            <p>{{description}}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    {{/each}}
-  </div>
-
-</div>
-<div id="favorites" class="col s12"></div>
-</div>
-
-{{!-- CARDS --}}
-<div class="row">
-  {{#each newsArticles}}
-  <div class="col s12 m4">
-    <div class="main">
-      <div class="card">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="{{urlToImage}}">
-        </div>
-        <div class="card-content">
-          <i class=" close material-icons right white-text">close</i>
-          <span class="card-title activator grey-text text-darken-4">{{title}}<i class="far fa-heart"></i></span>
-          {{!-- <p><a target="blank" href="#demo-modal-fixed-footer">Read Article</a></p> --}}
-          <p><a target="_blank" href="{{url}}">Go To Article</a></p>
-        </div>
-        {{!-- Here is some more information about this product that is only revealed once clicked on. --}}
-        <div class=" card-reveal">
-          <span class="card-title grey-text text-darken-4">{{title}}<i class="material-icons right">close</i></span>
-          <p>{{description}}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  {{/each}}
 </div>
 
 
@@ -228,7 +133,7 @@
         </form>
       </div>
       <br>
-      <input type="submit" value="Login" class="btn btn-large" id="loginButton" instance.close();>
+      <input type="submit" value="Login" class="btn btn-large" id="loginButton"  onSubmit="CloseModal();" onSubmit="instance.close()";>
 
     </form>
   </div>
